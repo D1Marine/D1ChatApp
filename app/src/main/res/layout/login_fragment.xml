@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="d1marine.com.d1chat.Activity.MainActivity">
+
+   <!-- <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/fab_margin">
+
+        <EditText
+            android:id="@+id/edit_login_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_above="@+id/edit_login_mobile"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/edit_text_padding"
+            android:paddingRight="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edit_login_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/edit_text_padding"
+            android:paddingRight="@dimen/edit_text_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/text_login_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_login_mobile"
+            android:layout_marginTop="@dimen/edit_text_padding"
+            android:background="@drawable/button_style"
+            android:gravity="center"
+            android:text="Register"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

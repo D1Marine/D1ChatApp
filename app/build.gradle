@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "d1marine.com.d1chat"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/PhotoUtil.jar')
+    //sweetalert
+    //sweetalert
+    //sweetalert
+    //sweetalert
+
+    //recyclerview
+
+    /*classpath 'com.vanniktech:gradle-code-quality-tools-plugin:0.4.0'//emoticons
+    classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.4.0'*/
+
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.mancj:SlideUp-Android:2.2.3'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.vanniktech:emoji-ios:0.4.0'
+    testCompile 'junit:junit:4.12'
+    //for xmpp
+    compile "org.igniterealtime.smack:smack-android:4.1.0-rc1"
+    compile "org.igniterealtime.smack:smack-tcp:4.1.0-rc1"
+    compile "org.igniterealtime.smack:smack-android-extensions:4.1.0-rc1"
+    compile 'org.igniterealtime:rest-api-client:1.1.3'
+    compile 'com.google.code.gson:gson:2.3.1'
+    //for push notification
+    compile 'com.google.firebase:firebase-core:9.6.0'
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+    apply plugin: 'com.google.gms.google-services'
+    compile 'me.neavo:volley:2014.12.09'//volley
+}
+

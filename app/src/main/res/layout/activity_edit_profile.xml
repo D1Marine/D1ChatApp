@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_profile_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_edit_profile"
+        layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/edit_profile_frame_layout"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_edit_profile_profile_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="70dp"
+                android:paddingTop="@dimen/fab_margin"
+                android:src="@drawable/profile_pic"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_edit_profile_cam"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|right"
+                android:paddingTop="@dimen/fab_margin"
+                android:src="@drawable/add_camera_pic"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="0dp" />
+
+        </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:layout_below="@+id/edit_profile_frame_layout"
+        android:id="@+id/relative_layout_edit_profile_usename">
+
+        <TextView
+            android:id="@+id/text_edit_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_edit"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/fab_margin"
+        android:gravity="center|left"
+        android:layout_below="@+id/relative_layout_edit_profile_usename"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/text_edit_profile_phone_number_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+        <TextView
+            android:paddingTop="@dimen/fab_margin"
+            android:layout_below="@+id/text_edit_profile_phone_number_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000000000"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </RelativeLayout>
+    </RelativeLayout>

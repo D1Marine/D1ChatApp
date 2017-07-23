@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616331807164",
+    "firebase_url": "https://d1-chat-e8147.firebaseio.com",
+    "project_id": "d1-chat-e8147",
+    "storage_bucket": "d1-chat-e8147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616331807164:android:898da45113958a10",
+        "android_client_info": {
+          "package_name": "d1marine.com.d1chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616331807164-6afq2khl7v67rr6ckvpqq8tur7o2q63s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "d1marine.com.d1chat",
+            "certificate_hash": "2746eb3a9703a8e1aae8913bafbabdcd05c40d40"
+          }
+        },
+        {
+          "client_id": "616331807164-sc4af7qvqjd15mfs120ckfr2pjgr4t37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt1BUNFqIBnD8kpJZZmkJsUoC1hPq3PCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616331807164-sc4af7qvqjd15mfs120ckfr2pjgr4t37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

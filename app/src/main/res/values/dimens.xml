@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="edit_text_padding1">5dp</dimen>
+    <dimen name="edit_text_padding_left">10dp</dimen>
+    <dimen name="margin_top">25dp</dimen>
+</resources>

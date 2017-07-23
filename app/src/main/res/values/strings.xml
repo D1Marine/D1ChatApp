@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">D1 Chat</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="server">192.168.27.2</string>
+    192.168.27.2
+    10.0.3.2
+    user-pc
+    localhost
+    <string name="user1_login">saira</string>
+    <string name="user1_password">d1marine</string>
+    <string name="msg_token_fmt" translatable="false">%s</string>
+    <string name="string_server_response">response</string>
+    <string name="server_host">http://user-pc</string>
+
+    saira
+    d1marine
+
+    banu
+    123
+</resources>

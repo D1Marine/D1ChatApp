@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_add_status_line"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingTop="8dp"
+            android:text="Currently set to"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/view_add_status_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e0e0" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_add_status_current_content"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:paddingTop="@dimen/fab_margin"
+                android:paddingBottom="@dimen/fab_margin"
+                android:text="Hey there! I am using D1 Chat"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:id="@+id/view_add_status_line_vertical"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#e1e0e0" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_edit_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/fab_margin"
+                android:paddingStart="@dimen/fab_margin">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/img_edit" />
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_status_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_add_status_current_content"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:paddingTop="@dimen/fab_margin"
+                android:paddingBottom="@dimen/fab_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:id="@+id/view_add_status_line_vertical_edit"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#e1e0e0" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_edit_status_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/fab_margin"
+                android:paddingStart="@dimen/fab_margin">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/status_save_tick" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="1.501">
+
+             <TextView
+                 android:id="@+id/text_add_status_current_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:paddingLeft="@dimen/fab_margin"
+                 android:paddingRight="@dimen/fab_margin"
+                 android:paddingTop="@dimen/fab_margin"
+                 android:paddingBottom="@dimen/fab_margin"
+                 android:text="Hey there! I am using D1 Chat"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="@color/colorPrimaryDark" />
+
+             <View
+                 android:id="@+id/view_add_status_line_vertical"
+                 android:layout_width="1dp"
+                 android:layout_height="40dp"
+                 android:layout_gravity="center"
+                 android:layout_weight="0.001"
+                 android:background="#e1e0e0" />
+
+             <ImageView
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:layout_gravity="center"
+                 android:layout_weight="0.5"
+                 android:src="@drawable/img_edit" />
+         </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/merging_to_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_add_status"
+        android:background="@color/colorBg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorBg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/merging_to_background"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_add_status_line"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingTop="8dp"
+            android:text="Select your about"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e0e0" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_layout_add_status"
+            android:background="@color/colorWhite"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</RelativeLayout>
